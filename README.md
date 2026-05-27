@@ -169,30 +169,117 @@ The comparison notebook reports the following weighted metrics:
 | DenseNet169 | 0.990 | 0.990 | 0.990 | 0.990 |
 
 <p align="center">
-  <img src="Imgae/K%E1%BA%BET%20QU%E1%BA%A2%20%26%20%C4%90%C3%81NH%20GI%C3%81%20so%20s%C3%A1nh%203%20model.png" alt="Model comparison chart" width="760">
+  <img src="Imgae/KẾT QUẢ & ĐÁNH GIÁ so sánh 3 model.png" alt="Model comparison chart" width="760">
 </p>
 
 DenseNet169 achieved the best overall score in the project, followed by ResNet50 and VGG16.
 
 ## Evaluation Visualizations
 
-The repository includes saved figures for model analysis:
+The repository includes a full set of figures for dataset inspection, model structure, training behavior, model evaluation, and prediction examples.
 
-| File | Description |
-|---|---|
-| `Imgae/Visualization loss & accuracy.png` | VGG16 training and validation curves |
-| `Imgae/Visualization loss & accuracy  ResNet50.png` | ResNet50 training and validation curves |
-| `Imgae/Visualization loss & accuracy DenseNet169.png` | DenseNet169 training and validation curves |
-| `Imgae/Ma tran nham lan Vgg16.png` | VGG16 confusion matrix image, stored in the repo with Vietnamese filename |
-| `Imgae/Ma tran nham lan ResNet50.png` | ResNet50 confusion matrix image, stored in the repo with Vietnamese filename |
-| `Imgae/Ma tran nham lan DenseNet169.png` | DenseNet169 confusion matrix image, stored in the repo with Vietnamese filename |
-| `Imgae/grad-Cam 1 mau.png` | Grad-CAM visualization image, stored in the repo with Vietnamese filename |
+### Dataset Distribution
 
-Example visual outputs:
+<table>
+  <tr>
+    <td align="center"><b>Training Set</b></td>
+    <td align="center"><b>Validation Set</b></td>
+    <td align="center"><b>Test Set</b></td>
+  </tr>
+  <tr>
+    <td><img src="Imgae/Number of samples Training set.png" alt="Training set distribution" width="260"></td>
+    <td><img src="Imgae/Number of samples val.png" alt="Validation set distribution" width="260"></td>
+    <td><img src="Imgae/Number of samples test.png" alt="Test set distribution" width="260"></td>
+  </tr>
+</table>
 
-<p align="center">
-  <img src="Imgae/Visualization%20loss%20%26%20accuracy.png" alt="Training curves" width="760">
-</p>
+### Model Architectures
+
+<table>
+  <tr>
+    <td align="center"><b>VGG16</b></td>
+    <td align="center"><b>ResNet50</b></td>
+    <td align="center"><b>DenseNet169</b></td>
+  </tr>
+  <tr>
+    <td><img src="Imgae/MÔ HÌNH VGG16.png" alt="VGG16 architecture" width="260"></td>
+    <td><img src="Imgae/MÔ HÌNH RESNET50.png" alt="ResNet50 architecture" width="260"></td>
+    <td><img src="Imgae/MÔ HÌNH DenseNet169.png" alt="DenseNet169 architecture" width="260"></td>
+  </tr>
+</table>
+
+### Training Curves
+
+<table>
+  <tr>
+    <td align="center"><b>VGG16</b></td>
+    <td align="center"><b>ResNet50</b></td>
+    <td align="center"><b>DenseNet169</b></td>
+  </tr>
+  <tr>
+    <td><img src="Imgae/Visualization loss & accuracy.png" alt="VGG16 training curves" width="260"></td>
+    <td><img src="Imgae/Visualization loss & accuracy  ResNet50.png" alt="ResNet50 training curves" width="260"></td>
+    <td><img src="Imgae/Visualization loss & accuracy DenseNet169.png" alt="DenseNet169 training curves" width="260"></td>
+  </tr>
+</table>
+
+### Confusion Matrices
+
+<table>
+  <tr>
+    <td align="center"><b>VGG16</b></td>
+    <td align="center"><b>ResNet50</b></td>
+    <td align="center"><b>DenseNet169</b></td>
+  </tr>
+  <tr>
+    <td><img src="Imgae/Ma trận nhầm lẫn Vgg16.png" alt="VGG16 confusion matrix" width="260"></td>
+    <td><img src="Imgae/Ma trận nhầm lẫn ResNet50.png" alt="ResNet50 confusion matrix" width="260"></td>
+    <td><img src="Imgae/Ma trận nhầm lẫn  DenseNet169.png" alt="DenseNet169 confusion matrix" width="260"></td>
+  </tr>
+</table>
+
+### Class-wise Metrics
+
+<table>
+  <tr>
+    <td align="center"><b>VGG16</b></td>
+    <td align="center"><b>ResNet50</b></td>
+    <td align="center"><b>DenseNet169</b></td>
+  </tr>
+  <tr>
+    <td><img src="Imgae/Đánh giá mô hình theo từng lớp vgg16.png" alt="VGG16 class-wise metrics" width="260"></td>
+    <td><img src="Imgae/Đánh giá mô hình theo từng lớp ResNet50.png" alt="ResNet50 class-wise metrics" width="260"></td>
+    <td><img src="Imgae/Đánh giá mô hình theo từng lớp DenseNet169.png" alt="DenseNet169 class-wise metrics" width="260"></td>
+  </tr>
+</table>
+
+### Visual Prediction Results
+
+<table>
+  <tr>
+    <td align="center"><b>VGG16</b></td>
+    <td align="center"><b>ResNet50</b></td>
+    <td align="center"><b>DenseNet169</b></td>
+  </tr>
+  <tr>
+    <td><img src="Imgae/kết quả dự đoán trực quan vgg16.png" alt="VGG16 visual predictions" width="260"></td>
+    <td><img src="Imgae/kết quả dự đoán trực quan  ResNet50 n.png" alt="ResNet50 visual predictions" width="260"></td>
+    <td><img src="Imgae/kết quả dự đoán trực quan DenseNet169.png" alt="DenseNet169 visual predictions" width="260"></td>
+  </tr>
+</table>
+
+### Overall Comparison and Grad-CAM
+
+<table>
+  <tr>
+    <td align="center"><b>Model Comparison</b></td>
+    <td align="center"><b>Grad-CAM Example</b></td>
+  </tr>
+  <tr>
+    <td><img src="Imgae/KẾT QUẢ & ĐÁNH GIÁ so sánh 3 model.png" alt="Model comparison metrics" width="390"></td>
+    <td><img src="Imgae/grad-Cam 1 mẫu.png" alt="Grad-CAM example" width="390"></td>
+  </tr>
+</table>
 
 ## Grad-CAM Interpretability
 
